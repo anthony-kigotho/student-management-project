@@ -1,0 +1,22 @@
+POST http://localhost:4500/student
+Content-Type: application/json
+
+{
+    "firstName": "Anthony",
+    "lastName": "Kigotho",
+    "className": "QA/QE",
+    "feeBalance": 20000
+}
+
+###
+GET http://localhost:4500/student
+
+###
+GET http://localhost:4500/student/cacc7905-d5d6-43c6-a7a6-b417c18a65e2
+
+### UPDATING feeBalance 
+PUT http://localhost:4500/student/cacc7905-d5d6-43c6-a7a6-b417c18a65e2/30000
+
+
+### SOFT DELETES STUDENT BY SETTING inSession to false
+PUT  http://localhost:4500/student/cacc7905-d5d6-43c6-a7a6-b417c18a65e2

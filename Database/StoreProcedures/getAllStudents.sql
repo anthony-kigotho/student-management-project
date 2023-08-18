@@ -1,0 +1,4 @@
+CREATE OR ALTER PROCEDURE getAllStudents
+AS
+BEGIN SELECT * FROM studentTable wHERE inSession = 1
+END
